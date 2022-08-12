@@ -1,0 +1,112 @@
+/*
+Theme Name: Bootstrap Basic
+Author: Jason DeBay
+Author URI: https://kattypem.com
+Theme URI: https://kattypem.com
+Description: Bootstrap basic template
+Version: 1.0.1
+*/
+
+ /* global styles css */
+*{
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--test1: red;
+	--test2: blue;
+	--bg-main: rgba(211, 196, 255, 1); // purple background
+
+	/* --btn-primary: green; */
+	/* --btn-secondary: red; */
+	/* --btn-light: white; */
+	
+	/* --bs-body-color: #212529; */
+	/* --bs-body-color: red; */
+    /* --bs-body-bg: #fff; */
+	
+	/* --text-muted: #6c757d!important; */
+	/* --text-muted: blue; */
+
+	
+	/* main font */
+	--roboto: 'Roboto', sans-serif;
+	/* secondary font */
+	--newscycle: 'News Cycle', 'Roboto', sans-serif;
+}
+body{
+	text-align: center;
+	background: var(--bg-main);
+	font-family: var(--roboto);
+}
+
+
+/* specific bootstrap styles */
+.dropdown-menu {
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+	border-radius: 0.25rem 0.25rem 0.5rem 0.5rem;
+ }
+.dropdown-item {
+    color: rgba(255,255,255,.55);
+}
+.card-text{
+	font-family: var(--newscycle);
+}
+footer .social-media-footer ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	padding: 0;
+}
+footer .social-media-footer ul li{
+	font-size: 24px;
+	padding: 12px;
+	transition: 0.4s;
+}
+footer .social-media-footer a .fa-facebook,
+footer .social-media-footer a .fa-youtube,
+footer .social-media-footer a .fa-twitter,
+footer .social-media-footer a .fa-instagram,
+footer .social-media-footer a .fa-instagram-square{
+	color: white;
+	transition: 0.4s;
+}
+footer .social-media-footer ul li:hover a .fa-facebook{
+	color: rgb(59, 89, 152, 1);
+}
+footer .social-media-footer ul li:hover a .fa-youtube{
+	color: rgba(255, 0, 0, 1);
+}
+footer .social-media-footer ul li:hover a .fa-twitter{
+	color: rgba(29, 161, 242, 1);
+}
+footer .social-media-footer ul li:hover a .fa-instagram,
+footer .social-media-footer ul li:hover a .fa-instagram-square{
+	background: #d6249f;
+	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+//specific colors to chanage
+/* .btn-primary{ */
+	/* color:: white; */
+	/* background-color: var(--btn-primary); */
+	/* border-color: var(--btn-primary); */
+/* } */
+/* .btn-secondary{ */
+	/* color:: white; */
+	/* background-color: var(--btn-secondary); */
+	/* border-color: var(--btn-secondary); */
+/* } */
+/* .text-muted{ */
+	/* color: var(--text-muted)!important; */
+/* } */
+
+
+
+
+
